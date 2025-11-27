@@ -1,0 +1,16 @@
+services:
+  - type: cron_job
+    name: racquetball-booker-cron
+    env: node
+    plan: free
+    branch: main
+    # Default schedule: daily at 14:00 UTC (approximately 6:00 AM PST/PDT).
+    # Adjust this cron expression in Render to match your desired local time.
+    schedule: "0 14 * * *"
+    buildCommand: "npm ci && npx playwright install"
+    startCommand: "node src/bot.js"
+    envVars:
+      - key: RB_USER
+      - key: RB_PASS
+      - key: LOCATION_NAME
+      - key: COURT_NUMBER
