@@ -1,0 +1,17 @@
+{
+  "name": "laf-raquetball-bot",
+  "version": "0.1.0",
+  "description": "Automated racquetball court booking bot (configurable, Playwright)",
+  "main": "src/bot.js",
+  "scripts": {
+    "start": "node src/bot.js",
+    "run": "node src/bot.js",
+    "inspect": "node src/inspect_selectors.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0"
+  }
+}

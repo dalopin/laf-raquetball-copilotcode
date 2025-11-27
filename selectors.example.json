@@ -1,0 +1,24 @@
+{
+  "login": {
+    "loginUrl": "https://lafitness.com/Account/Login.aspx",
+    "usernameSelector": "#username", 
+    "passwordSelector": "#password",
+    "submitSelector": "#loginButton"
+  },
+  "location": {
+    "selectSelector": "#ctl00_MainContent_locationSelect",
+    "locatorTextSelector": "//button[contains(text(), '__LOCATION__')]"
+  },
+  "slot": {
+    "slotListSelector": ".slot-list",
+    "itemSelector": ".slot-item",
+    "bookButtonSelector": ".book-btn",
+    "dateAttribute": "data-date", 
+    "timeAttribute": "data-time",
+    "courtAttribute": "data-court",
+    "dateRegex": "\\\w+ \\\d{1,2},? \\\d{4}",
+    "timeRegex": "\\\d{1,2}:\\\d{2}(?:\\s?(?:AM|PM|am|pm))?",
+    "courtRegex": "Court\\s*(\\\\d+)"
+  },
+  "confirmationSelector": ".booking-confirmation"
+}
